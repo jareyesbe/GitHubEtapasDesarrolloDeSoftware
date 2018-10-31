@@ -1,0 +1,106 @@
+*{ /*el * es la etiqueta universal en css, con el margin:0; y padding:0; reseteamos todas las margenes de la pagina*/
+    margin: 0;
+    padding: 0%;
+}
+
+.menup{
+    width: 100%;
+    max-width: 1000px; 
+    margin:auto;
+    overflow:hidden;
+}
+body{
+      background:#B3B3B3;
+     }
+
+
+header{
+    max-width: 100%;/* ancho maximo que va a tener la caja*/
+    min-height: 180px;/*alto minimo*/
+    background:#ccc; /*COLOR DE FONDO*/
+    margin:0 auto;/* centra la caja*/
+    border-radius: 20px 20px 0 0;
+     box-sizing: border-box;
+}
+ header h1{
+    width: 40%;/*ancho*/
+    float:left;
+    margin-top: 40px;
+    margin-left: 50px; 
+    font-family: verdana;
+    text-align:center;
+    align-content: center;
+     box-sizing: border-box;
+}
+header h2{
+    width: 40%;/*ancho*/
+    float:left;
+    margin-top: 0px;
+    margin-left: 50px; 
+    font-family: verdana;
+     align-content: center;
+    text-align:center;
+     box-sizing: border-box;
+     
+}
+
+#logo a{
+    width: 32%;/*ancho*/
+    float:left;
+    margin-top: 10px;
+    margin-left: 40px;
+    animation: 1s entradalogo
+  
+   
+}
+
+/*#button a{*/
+   /* border: 0px;*/
+    /*font-size: 20px;*/
+   /*  width:0px;*/
+   /* margin-top: 150px;*/
+   /* background: #005883;*/
+   /* color: #ffffff;/*cambio de color letra*/
+
+   
+   
+
+
+
+
+#contenido{
+    width:100%; /*ancho maxino*/     
+    min-height: 300%;/*alto maximo*/
+    background: #F0B429;
+    float: right;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration-color: aliceblue;
+}
+
+#contenido p {
+     margin-bottom: 10%;/*separa los textos*/
+     font-family: arial;/*fuente de letra*/
+     margin-top: 20px;
+     font-size: 24px;
+     margin-left: 6px;
+     margin-right: 6px;
+    text-align:justify; 
+}
+/*FIN CONTENIDO*/
+
+
+/*INICIO FOOTER*/
+    
+footer{
+    margin-top: 30px;
+    font-size: 20px;
+    max-width:100%; /*ancho maxino*/
+    min-height: 130px;/*alto maximo*/
+    text-align:center;
+    background: #ccc;
+    margin:  auto; 
+    border-radius: 0 0 20px 20px
+    
+}
+/*FIN FOOTER*/

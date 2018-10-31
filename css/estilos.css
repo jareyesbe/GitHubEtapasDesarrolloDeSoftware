@@ -1,0 +1,244 @@
+*{ /*el * es la etiqueta universal en css, con el margin:0; y padding:0; reseteamos todas las margenes de la pagina*/
+    margin: 0;
+    padding: 0%;
+}
+
+.menup{
+    width: 100%;
+    max-width: 1000px; 
+    margin:auto;
+    overflow:hidden;
+   
+}          
+body{
+    background:#B3B3B3;
+}
+/*CABECERA*/
+header{
+    max-width: 100%;/* ancho maximo que va a tener la caja*/
+    min-height: 180px;/*alto minimo*/
+    background:#ccc; /*COLOR DE FONDO*/
+    margin:0 auto;/* centra la caja*/
+    border-radius: 20px 20px 0 0;
+     box-sizing: border-box;
+}
+header h1{
+    width: 40%;/*ancho*/
+    float:left;
+    margin-top: 40px;
+    margin-left: 50px; 
+    font-family: verdana;
+    text-align:center;
+    align-content: center;
+     box-sizing: border-box;
+}
+header h2{
+    width: 40%;/*ancho*/
+    float:left;
+    margin-top: 0px;
+    margin-left: 50px; 
+    font-family: verdana;
+     align-content: center;
+    text-align:center;
+     box-sizing: border-box;
+     
+}
+
+#logo a{
+    width: 32%;/*ancho*/
+    float:left;
+    margin-top: 10px;
+    margin-left: 40px;
+    animation: 1s entradalogo
+  
+   
+}
+/**FIN CABECERA*/
+
+
+/*INICIO MENU PRINCIPAL*/
+#menu{
+    max-width:100%; /*ancho maxino*/
+    min-height: 50px;/*alto maximo*/
+    background: #F0B429; /*Color de fondo*/
+    margin:0 auto;/* el primer numero corresponde a la parte superior/inferiory auto izq-derec*/ 
+  /*FIN MENU PRINCIPAL*/  
+} 
+
+/*elementos (ul) de la lista*/ 
+#menu ul{
+   list-style: none; /*Quitar viñetas del menu */
+    display:flex;/*COLOCAR LAS SECCIONES DEL MENU UNO AL LADO DEL OTRO*/   
+    justify-content:center;/*organizar el contenido del menu centrado*/
+    background: #005883;/*Color de la letra*/
+    font-family:arial;/*Fuente de letra*/
+    font-size: 24;/*Tamaño de letra*/
+    /*Text-align:center; centra texto*/
+    align-content: center;/*alinea centrado el texto*/
+    
+}
+
+/*ahora llmamos los elementos (a) de la lista, es decir a los enlaces dentro de (a)*/ 
+#menu a {
+    color:#fff;/*Color del menu*/
+    display: block;/**/
+    padding: 20px;
+    text-decoration: none;
+    background: #005883;
+    
+  
+}
+
+#menu a:hover{
+  background:#F0B429; 
+    
+}
+
+#menu ul ul{
+    
+    display: none;/*ocultar el submenu*/
+    position: absolute;/*Con esta etiqueta rompemos la maquetacion del submenu, sacarlo de esa caja */
+}
+/*Esta linea con la seudoclase hover, nos indica de que se va a ejecutar una accion, cuandocolocamos el puntero sobre algo, en este caso cuando se coloque el puntero sobre el submenu  aparezca el menu desplegable */
+#menu ul li:hover  ul{
+ display: block;
+     
+}
+        
+#banner{
+    max-width:100%; /*ancho maxino*/
+    min-height: 290px;/*alto maximo*/
+    background: #F0B429;
+    margin: 0 auto;
+}
+#contenedor{ /*este contenedor es el que tiene en su interior la seccion de redes y contenido*/
+    max-width:100%; /*ancho maxino*/
+    min-height: 700px;/*alto maximo*/
+    background: #F0B429;
+    margin: 0 auto;
+    
+}
+#redes{
+    width: 30%;/*ancho*/
+    min-height: 700px;
+    background: #005883;
+    float:left; 
+      
+    
+}
+
+#redes  a{
+    margin-left: 75px;
+      
+}
+ #tw {
+    margin-left: 30px;
+    
+}
+
+/*CONTENIDO*/
+#contenido{
+    width:70%; /*ancho maxino*/     
+    min-height: 70%;/*alto maximo*/
+    background: #F0B429;
+    float: right;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*FIN CONTENIDO*/
+
+
+
+/*INICIO CONFIGURACION TEXTO #CONTENEDOR H2*/
+
+#contenido h2{
+    text-align:center; /*centra texto*/
+    align-content: justify;/*alinea centrado el texto*/
+    width:70%;/*ancho*/
+    min-height: 700;/*alto maximo*/
+    float: center;
+    margin-top: 12px;
+    margin-left: 100px; /*margen a la izquierda*/
+    
+    font-family: arial;/*fuente de letra*/
+   
+    
+}
+
+#contenido p {
+     margin-bottom: 10%;/*separa los textos*/
+     font-family: arial;/*fuente de letra*/
+     margin-top: 20px;
+     font-size: 24px;
+     margin-left: 6px;
+     margin-right: 6px;
+    text-align:justify; /*centra texto*/
+   
+    
+    
+    
+     
+    
+    
+   
+}
+/*FIN CONFIGURACION TEXTO #CONTENEDOR H2*/
+
+
+/*para crear una clase, se realiza con el nombre que uno quiera.*/
+
+
+.img-izd{
+  border: 1px solid #005883;/*etiqueta para el borde de una imagen*/
+padding: 5px; /*etiqueta para que la imagen no aparezaca muy pegada*/
+}
+#contenedor img {
+    margin-top: 1%;
+    margin-left: 0px; 
+ 
+    
+}
+
+/*#redes a{
+    
+    margin-left: 75px; 
+  
+    
+}  
+/*INICIO CONFIGURACION TEXTO #REDES H2*/
+ #redes h2{
+    text-align:center;/*centra texto*/
+    align-content: center;/*alinea centrado el texto*/
+    width: 70%;/*ancho del titulo*/
+   float:left;
+    margin-top: 10px;
+    margin-left: 40px; 
+    font-family: arial;
+         
+}
+/*FIN CONFIGURACION TEXTO #REDES H2*/
+
+
+/*INICIO FOOTER*/
+footer{
+    margin-top: 30px;
+    font-size: 20px;
+    max-width:100%; /*ancho maxino*/
+    min-height: 130px;/*alto maximo*/
+    text-align:center;
+    background: #ccc;
+    margin:  auto; 
+    border-radius: 0 0 20px 20px
+    
+}
+/*FIN FOOTER*/
+/*vamos a aminar la caja que tiene la imagen*/
+/*para hacer uso de la animacion utilizamos los KEYFRAMES*/
+/*INICIO ANIMACION*/
+
+
+
+    
+
+
+
